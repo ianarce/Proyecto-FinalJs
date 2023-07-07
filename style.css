@@ -1,0 +1,90 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    background-image: url(img/background-24.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{width: 60rem;
+    min-height: 50rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+input,select,button{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.container h1{
+   margin-bottom: 5rem;
+    text-align: center;
+}
+.importe input{
+    height: 4rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 1.7rem;
+}
+
+.importe h2{
+    margin-bottom: 1rem;
+}
+
+.valores{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+
+.selectbox{
+    display: flex;
+    height: 45px;
+    width: 115px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #999;
+}
+
+.selectbox select{
+    width: auto;
+}
+.selectbox img{
+    max-width: 3rem;
+}
+
+.valores .icon{
+    font-size: 5rem;
+    margin-top: 7rem;
+}
+
+.btn {
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #ffffff;
+    border: 1px solid white;
+    background-color:#02AC66;
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(.9);
+}
+
+.parrafoResultado {
+    background-color: black;
+    padding: 1rem;
+    color: #ffffff;
+}

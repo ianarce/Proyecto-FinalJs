@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/695e4ea6f2.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+   
+
+    <title>Conversor de divisas</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+          <h1>CONVERTIDOR DE MONEDAS</h1>
+            <form class="datos">
+              <div class="importe">
+                <h2>IMPORTE</h2>
+                <input class="input" type="number" id="valorIn" placeholder="Ingresa el valor a convertir" min="0" >
+              </div>
+
+              <div class="valores">
+                <div class="de">
+                  <h2>DE:</h2>
+                  <div class="selectbox">
+                    <img id="img1" src="img/currency-flags-master/src/flags/usd.png" alt="USD"/>
+                    <select id="input1">
+                      <option value="MXN">MXN</option>
+                      <option value="USD" selected>USD</option>
+              
+                    </select>
+                  </div>
+                </div>
+
+                <div class="icon">
+                  <i class="fa fa-exchange-alt"></i>
+                </div>
+                
+                <div class="a">
+                  <h2>A:</h2>
+                  <div class="selectbox">
+                    <img id="img2" src="img/currency-flags-master/src/flags/mxn.png" alt="MXN"/>
+                    <select id="input2">
+                      <option value="MXN" selected>MXN</option>
+                      <option value="USD">USD</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            
+              <div>
+                <h2>Resultado</h2>
+                <p id="resultado" class="parrafoResultado"></p>
+              </div>
+            </form>
+            <div class="butonContenedor">
+                <button class="btn btn-success"type="button" id="cargar">Cargar Favorito</button>
+                <button class="btn btn-success"type="button" id="añadir">Añadir a favoritos</button>
+                <button class="btn btn-success"type="button" id="enviar">Convertir</button>
+
+            </div>
+            
+        
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="miarchivo.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+  </body>
+</html>
